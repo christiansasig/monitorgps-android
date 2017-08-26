@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.roussun.android.apps.monitoreogps.fragment.SearchDeviceFragment"
+  >
+
+    <LinearLayout
+        android:id="@+id/panelHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Dispositivo:"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/device"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="0dp"
+    android:weightSum="3">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Inicio:"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/dateStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:text="lun, 2017"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Fin:"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/dateEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:text="lun, 2017"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_below="@+id/panelHeader"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_search"
+        app:backgroundTint="@color/colorPrimary" />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_place_black"
+            android:title="Mis dispositivos" />
+
+        <item
+            android:id="@+id/nav_historial_position"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="Historial de ubicaciones" />
+
+        <item
+            android:id="@+id/nav_search_device"
+            android:icon="@drawable/ic_explore"
+            android:title="Rastreo del dispositivo" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@android:drawable/ic_menu_close_clear_cancel"
+            android:title="Salir" />
+
+    </group>
+
+</menu>
